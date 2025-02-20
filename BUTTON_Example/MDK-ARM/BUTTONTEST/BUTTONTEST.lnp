@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"buttontest\startup_stm32f103xe.o"
+"buttontest\main.o"
+"buttontest\gpio.o"
+"buttontest\stm32f1xx_it.o"
+"buttontest\stm32f1xx_hal_msp.o"
+"buttontest\stm32f1xx_hal_gpio_ex.o"
+"buttontest\stm32f1xx_hal.o"
+"buttontest\stm32f1xx_hal_rcc.o"
+"buttontest\stm32f1xx_hal_rcc_ex.o"
+"buttontest\stm32f1xx_hal_gpio.o"
+"buttontest\stm32f1xx_hal_dma.o"
+"buttontest\stm32f1xx_hal_cortex.o"
+"buttontest\stm32f1xx_hal_pwr.o"
+"buttontest\stm32f1xx_hal_flash.o"
+"buttontest\stm32f1xx_hal_flash_ex.o"
+"buttontest\stm32f1xx_hal_exti.o"
+"buttontest\system_stm32f1xx.o"
+--strict --scatter "BUTTONTEST\BUTTONTEST.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BUTTONTEST.map" -o BUTTONTEST\BUTTONTEST.axf
