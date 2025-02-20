@@ -2,6 +2,7 @@
 
 ## 프로젝트 소개
 JK전자에 STM32 Dragon Board HAL 코드 예제
+![Dragon Board](images/board.jpg)
 
 ## 주요 기능
 ### GPIO 제어를 통한 LED 제어
